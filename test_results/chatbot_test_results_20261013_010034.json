@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "category": "A. Match Understanding",
+    "feature": "AI Match Assistant",
+    "question": "Who is on top right now?",
+    "expected_behavior": "Answer from the current replay state; explain uncertainty.",
+    "answer": "- Australia is currently on top, as they are the batting side and have a score of 94/2 after 13.1 overs.  \n- Sri Lanka has not yet begun its innings, so no comparison can be made.",
+    "status": "ANSWERED_NOT_VERIFIED",
+    "issues": "",
+    "context_summary": "{\"match_id\": \"1001349\", \"innings\": 1, \"replay_position\": 81, \"score\": \"94/2\", \"overs\": \"13.1\", \"target\": null, \"runs_required\": null}",
+    "judge_status": "",
+    "judge_reason": "",
+    "context_label": "1001349/innings-1/delivery-81-of-125"
+  },
+  {
+    "id": 2,
+    "category": "A. Match Understanding",
+    "feature": "AI Match Assistant",
+    "question": "What should I watch for in the next over?",
+    "expected_behavior": "Give grounded tactical context; do not claim to know future events.",
+    "answer": "**What to watch for in the next over (balls 79‑84)**  \n\n- **Current match context** – Australia are **94/2** after **13.1 overs** (79 legal balls) with a **run rate of 7.14** and **41 balls left**.  \n- **Run‑rate pressure** – To finish a 20‑over innings at the current pace they need about **7.14 runs per over** for the remaining overs. Any dip below this rate will increase the pressure to accelerate later.  \n- **Wicket situation** – Only **2 wickets** have fallen, so the batting side still has **8 wickets in hand**. The partnership can afford to be aggressive, but a quick wicket could shift momentum.  \n- **Bowling strategy** – The bowler delivering balls 79‑84 will be in the **early part of the death‑overs phase**. Expect:\n  - Use of slower balls, yorkers, or length variations to curb the run rate.  \n  - Field placements that protect the boundary while offering catching chances on mistimed shots.  \n- **Key moments to notice**  \n  - **First two deliveries**: Often used to set the tone—either a boundary to keep the run rate up or a dot to build pressure.  \n  - **Middle of the over (balls 81‑83)**: Batsmen may look to rotate strike and target gaps; watch for quick singles or doubles that keep the scoreboard ticking.  \n  - **Final ball (ball 84)**: Teams frequently try to finish the over with a boundary or a big swing; a boundary here can boost confidence for the next over.  \n\nIn short, watch how Australia balances **maintaining the 7.14 RR** with **preserving wickets**, and how the bowler mixes pace and length to limit scoring in this crucial early‑death over.",
+    "status": "ANSWERED_NOT_VERIFIED",
+    "issues": "",
+    "context_summary": "{\"match_id\": \"1001349\", \"innings\": 1, \"replay_position\": 81, \"score\": \"94/2\", \"overs\": \"13.1\", \"target\": null, \"runs_required\": null}",
+    "judge_status": "",
+    "judge_reason": "",
+    "context_label": "1001349/innings-1/delivery-81-of-125"
+  },
+  {
+    "id": 3,
+    "category": "A. Match Understanding",
+    "feature": "AI Match Assistant",
+    "question": "Explain this match to me like I’m new to cricket.",
+    "expected_behavior": "Explain simply using current match context.",
+    "answer": "**What the scoreboard is showing**\n\n- **Score:** Australia 94 runs for the loss of 2 wickets (94/2).  \n- **Overs faced:** 13.1 overs (13 full overs + 1 ball).  \n- **Legal balls bowled:** 79 balls.  \n- **Balls left:** 41 balls remain in the 20‑over innings.  \n- **Current run rate:** 7.14 runs per over (94 runs ÷ 13.166 overs).  \n\n**What this means for a newcomer**\n\n- Australia has already scored **94 runs** while only **two** of their batters have been dismissed, so most of the batting line‑up is still available.  \n- With **41 balls** (just under 7 overs) still to play, they have plenty of deliveries left to add more runs.  \n- The **run rate of 7.14** tells us they are scoring a little over 7 runs each over on average so far. In a T20 match, a run rate around 7–8 is generally considered solid, especially with few wickets lost.  \n\n**What we don’t know from the data**\n\n- The **target** (how many runs Australia need to win) is not provided, so we cannot say how many more runs are required.  \n- Any **probability of winning** or expected outcome is unavailable because those figures are not in the supplied data.  \n\nIn short, at 13.1 overs Australia is in a strong position: they have a good score, only two wickets down, and a healthy number of balls left to continue building the total.",
+    "status": "ANSWERED_NOT_VERIFIED",
+    "issues": "",
+    "context_summary": "{\"match_id\": \"1001349\", \"innings\": 1, \"replay_position\": 81, \"score\": \"94/2\", \"overs\": \"13.1\", \"target\": null, \"runs_required\": null}",
+    "judge_status": "",
+    "judge_reason": "",
+    "context_label": "1001349/innings-1/delivery-81-of-125"
+  }
+]
