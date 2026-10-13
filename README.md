@@ -56,45 +56,6 @@ The scenario simulator is a prototype and does not yet model every rule (all dis
 
 *The live provider is a future extension and is not integrated yet.*
 
-<details>
-<summary>Editable diagram source (Mermaid)</summary>
-
-```mermaid
-flowchart TD
-    U["Cricket fan"] --> UI["Streamlit UI<br/>Match selector, replay controls, chat"]
-    UI --> CAT["Select category and maintain session context"]
-    CAT --> ROUTER["LangGraph assistant workflow<br/>Classify intent and route request"]
-
-    ROUTER --> HIST["Historical data / replay"]
-    ROUTER --> STATE["Cricket state engine<br/>Score, wickets, overs, rates"]
-    ROUTER --> SIM["What-if scenario simulator"]
-    ROUTER --> WP["Win-probability inference"]
-    ROUTER --> SUMMARY["Recap and turning-point analysis"]
-
-    HIST --> STATE
-    STATE --> SIM
-    STATE --> WP
-    STATE --> SUMMARY
-
-    SUMMARY --> RETRIEVE["Pinecone semantic retrieval"]
-    ROUTER --> LLM["Groq LLM — Primary Language Model<br/>Explain verified facts and scenario outcomes"]
-    STATE --> LLM
-    SIM --> LLM
-    WP --> LLM
-    SUMMARY --> LLM
-
-    ROUTER -. "checkpointing" .-> SQLITE[("SQLite conversation checkpoints")]
-    RETRIEVE -- "cache" --> REDIS[("Redis cache")]
-
-    LLM --> VALIDATE["Build answer from data and calculations"]
-    VALIDATE --> UI
-    UI --> U
-
-    LIVE["Live provider<br/>Not integrated yet"] -. "future extension" .-> HIST
-```
-
-</details>
-
 ### Request lifecycle
 
 1. The fan selects a match and a conversation category in Streamlit.
